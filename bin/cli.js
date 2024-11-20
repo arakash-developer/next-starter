@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-const {exeSync} = require('child_process');
+const {execSync} = require('child_process');
 const runCommand = command =>{
     try{
-        exeSync(`${command}`,{stdio: 'inherit'});
+        execSync(`${command}`,{stdio: 'inherit'});
     }catch(e){
         console.error(`Failed to execute ${command}`,e);
         return false;
@@ -10,7 +10,7 @@ const runCommand = command =>{
     return true;
 }
 const repoName = process.argv[2];
-const gitCheckoutCommand = `git clone --dept 1 https://github.com/arakash-developer/next-starter.git ${repoName}`;
+const gitCheckoutCommand = `git clone --dept 1 https://github.com/arakash-developer/next-starter ${repoName}`;
 const installDepsCommand = `cd ${repoName} && npm install`;
 console.log(`Cloning the repository with name ${repoName}`);
 const checkedOut =  runCommand(gitCheckoutCommand);
