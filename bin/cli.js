@@ -10,14 +10,14 @@ const runCommand = command =>{
     }
     return true;
 }
-// const repoName = process.argv[2];
-// console.log(repoName);
-const gitCheckoutCommand = `git clone --dept 1 https://github.com/arakash-developer/next-starter`;
-const installDepsCommand = `npm install`;
-console.log(`Cloning the repository with name`);
+const repoName = process.argv[2];
+console.log(repoName);
+const gitCheckoutCommand = `git clone --dept 1 https://github.com/arakash-developer/next-starter ${repoName}`;
+const installDepsCommand = `cd ${repoName} && npm install`;
+console.log(`Cloning the repository with name ${repoName}`);
 const checkedOut =  runCommand(gitCheckoutCommand);
 if(!checkedOut) process.exit(-1);
-console.log(`Installing dependencies for`);
+console.log(`Installing dependencies for ${repoName}`);
 const installedDeps = runCommand(installDepsCommand);
 if(!installedDeps) process.exit(-1); 
 console.log(`Congratulation!! You are Ready`);
