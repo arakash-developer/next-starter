@@ -12,7 +12,7 @@ const runCommand = command =>{
 }
 const repoName = process.argv[2];
 console.log(repoName);
-const gitCheckoutCommand = `git clone --dept 1 https://github.com/arakash-developer/next-starter ${repoName}`;
+const gitCheckoutCommand = `git clone --dept 1 https://github.com/arakash-developer/nextjs-starter ${repoName}`;
 const installDepsCommand = `cd ${repoName} && npm install`;
 console.log(`Cloning the repository with name ${repoName}`);
 const checkedOut =  runCommand(gitCheckoutCommand);
