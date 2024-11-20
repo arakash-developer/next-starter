@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 First, run the development server:
 
-Starter Templete  Command : npx @akash.dev/next-starter .
+Starter Templete  Command : npx @akash.dev/next-starter 
 
 ```bash
 npm run dev
