@@ -1,5 +1,5 @@
 {
-  "name": "next-starter",
+  "name": "@akash.dev/next-starter",
   "version": "0.1.0",
   "bin": "./bin/cli.js",
   "scripts": {
