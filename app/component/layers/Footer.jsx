@@ -4,7 +4,9 @@ import Container from '@/app/component/layers/Container'
 const Footer = () => {
   return (
     <div>
-      Footer
+      <Container>
+        Footer
+      </Container>
     </div>
   )
 }
