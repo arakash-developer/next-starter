@@ -9,7 +9,7 @@ const runCommand = command =>{
     }
     return true;
 }
-const repoName = process.argv[2];
+const repoName = process.argv[0];
 const gitCheckoutCommand = `git clone --dept 1 https://github.com/arakash-developer/next-starter ${repoName}`;
 const installDepsCommand = `cd ${repoName} && npm install`;
 console.log(`Cloning the repository with name ${repoName}`);
