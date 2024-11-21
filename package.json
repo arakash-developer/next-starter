@@ -2,20 +2,11 @@
   "name": "@akash.dev/next-starter",
   "version": "0.1.20",
   "bin": "./bin/cli.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "next": "15.0.3",
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
-    "react-icons": "^5.3.0"
-  },
-  "devDependencies": {
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1"
-  }
+  "author": "@akash.dev",
+  "license": "ISC",
+  "description": ""
 }
